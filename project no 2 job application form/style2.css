@@ -1,0 +1,160 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #0c192d;
+
+
+}
+
+.container {
+
+    min-width: 250px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+
+
+}
+
+.registeration {
+
+    margin: 0 auto;
+    background-color: white;
+    max-width: 550px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px;
+    background-color: #0c192d;
+background-image: linear-gradient(160deg, #0c192d 0%, #0f7969 100%);
+
+    color: white;
+
+}
+
+.heading {
+
+    padding: 20px;
+    box-shadow: 2px 5px 3px -5px black;
+}
+
+label {
+
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control1 {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.form-control2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.form-control3 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.gender-selector {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+}
+
+
+.gender-option label {
+
+    display: inline-block;
+    margin: 20px;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+}
+
+.gender-option input:checked+label {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.button {
+    list-style: none;
+    /* background-color: #13496d; */
+
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    bottom: 10px;
+    cursor: pointer;
+
+}
+
+.button button {
+
+    /* background-color: #13496d; */
+
+    font-size: 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 400px) {
+
+    .form-control1,
+    .form-control2,
+    .form-control3,
+    .gender-option {
+
+        display: block;
+
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .form-control1 div,
+    .form-control2 div,
+    .form-control3 div {
+
+        margin-top: 30px;
+        margin-left: 30px;
+        display: grid;
+
+    }
+}
+
+.button:hover{
+    background-color: #0c192d;
+    transition: all 0.8s;
+}
+
+button:hover{
+    background-color: #0c192d;
+    color: #fff;
+}
