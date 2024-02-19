@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <style>
+        * {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+background-image: url("img2.jpg.png");
+background-size: cover;
+background-repeat: no-repeat;
+color: white;
+height: 100vh;
+}
+
+.container{
+max-width: 500px;
+margin: 0 auto;
+}
+
+.main{
+max-width: 350px;
+height: 500px;
+background-color: rgba(0, 0, 0, 0.7);
+margin: 0 auto;
+margin-top: 50px;
+border-radius: 8px;
+min-width: 350px;
+}
+
+.heading{
+text-align: center;
+}
+
+label{
+display: block;
+margin-bottom: 10px;
+}
+
+input{
+width: 300px;
+height: 30px;
+border-radius: 5px;
+
+
+}
+
+.form1{
+display: flex;
+justify-content: center;
+margin: 20px auto;
+}
+
+.form2{
+display: flex;
+justify-content: center;
+margin: 20px auto;
+}
+
+.form3{
+display: flex;
+justify-content: center;
+margin: 20px auto;
+}
+
+.form4{
+display: flex;
+justify-content: center;
+margin: 20px auto;
+}
+
+.button{
+
+max-width: 250px;
+margin: 30px auto;
+display: flex;
+justify-content: center;
+}
+
+button{
+background-color: rgb(192, 127, 6);
+font-size: large;
+font-weight: 900;
+cursor: pointer;
+padding: 7px 15px;
+color: rgb(244, 237, 237);
+border-radius: 5px;
+}
+
+button:hover{
+background-color: maroon;
+transition: all 0.8s;
+color:cornflowerblue;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="heading">
+                <h1>Register</h1>
+            </div><!-- heading -->
+            <form action="">
+                <div class="form1">
+                    <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
+                </div>
+                </div>
+                <div class="form2">
+                    <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name">
+                    </div>
+                </div>
+                <div class="form3">
+                    <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                </div>
+                <div class="form4">
+                    <div>
+                    <label for="age">Your Age</label>
+                    <input type="date" name="age" id="age">
+                </div>
+                </div>
+               <div class="button">
+                <div>
+                    <button>Submit</button>
+                </div>
+               </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
