@@ -1,0 +1,329 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+
+    min-height: 100%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+
+}
+
+
+nav {
+
+    background-color: #3d3d3d;
+    min-width: 500px;
+    position: sticky;
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-around;
+    background-color: #0c192d;
+    color: white;
+    height: 70px;
+    padding: 25px;
+    min-width: 500px;
+}
+
+.list {
+
+    display: flex;
+}
+
+.list div {
+
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.list div:hover {
+    background-color: #007bff;
+}
+
+
+.logo {
+
+    color: #e69b00;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.bar {
+
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.center-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.background {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 500px;
+    background-image: url('imgs/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    filter: brightness(70%);
+}
+
+.background h1 {
+    font-size: 35px;
+}
+
+.background h2 {
+    font-size: 25px;
+}
+
+
+h1,
+h2 {
+    margin: 10px 0;
+}
+
+.menu-button {
+
+    background-color: #007bff;
+    /* background-color: #3d3d3d; */
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-button:hover {
+
+    background-color: teal;
+}
+
+.border {
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+
+
+.section2 {
+    max-width: 1200px;
+    min-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    margin: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid yellow;
+    border-radius: 50%;
+}
+
+.text {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+}
+
+.heading {
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section3 {
+    max-width: 1200px;
+    min-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.section3 h1 {
+    color: #333;
+}
+
+.section3 figure {
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+}
+
+.section3 img {
+    width: 250px;
+    height: 300px;
+}
+
+.section3 figcaption {
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.section4 {
+    max-width: 1200px;
+    min-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.centered {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div1,
+.div2 {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.div1 p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.div2 img {
+    width: 300px;
+}
+
+.section5 {
+    max-width: 1200px;
+    min-width: 500px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: auto;
+}
+
+.section5 h1 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.section5 .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div1,
+.div2 {
+    flex: 1;
+    margin: 10px;
+}
+
+svg{
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.second{
+    border: 15px solid #007bff;
+}
+
+
+
+@media (max-width: 786px) {
+
+    .list div {
+        padding: 10px;
+    }
+
+    .list {
+
+        flex-direction: column;
+
+    }
+
+    .navbar {
+
+        height: 180px;
+        min-width: 300px;
+    }
+
+    .section-1 {
+
+        min-width: 300px;
+    }
+
+    .section2 {
+        flex-direction: column;
+    }
+
+    .section2 .box {
+        margin-top: 40px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .div1{
+        width: 70%;
+    }
+
+    .second{
+        width: 70%;
+    }
+}
